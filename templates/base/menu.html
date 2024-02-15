@@ -40,21 +40,21 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                Options Blog
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="{% url 'author_list' %}" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>List Authors</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{% url 'blog_list' %}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                  <p>List Blogs</p>
                 </a>
               </li>
             </ul>
@@ -68,8 +68,49 @@
               </p>
             </a>
           </li>
+          
+          <li class="nav-item">
+            <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Top Navigation + Sidebar</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/layout/boxed.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Boxed</p>
+            </a>
+          </li>
         </ul>
       </nav>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="true">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Options Blog
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{% url 'author_list' %}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>List Authors</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'blog_list' %}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>List Blogs</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
